@@ -9,7 +9,6 @@ const language = {
               visando manter, levantar requisitos de novas
               funcionalidades, Identificar e resolver falhas de aplicações
               desenvolvidas.`,
-        experience: "",
         contact: "Informações de Contato",
         about: "Sobre Minha Pessoa",
         job: ` 
@@ -233,10 +232,15 @@ $(document).ready(function() {
             document.getElementById('education').textContent = language.pt.education;
             document.getElementById('contactInfo').textContent = language.pt.contact;
             document.getElementById('aboutHeader').textContent = language.pt.about;
+            document.getElementById('role').textContent = language.pt.about;
             document.getElementById('jobCard').innerHTML = language.pt.job;
             document.getElementById('jobCard2').innerHTML = language.pt.job2;
-       
-           
+            document.getElementById('jobHeader').textContent = "Fitbank - Analista de Sistemas FullStack .Net | C# Junior II - Presencial | 09/2024 - 03/2025";
+            document.getElementById('jobHeader2').textContent = "Grupo Ramos de Negócios e Tecnologia - Desenvolvedor FullStack .Net | C#  - Híbrido | 07/2022 – 09/2024";
+            
+            
+         
+
         } else {
             
             document.getElementById('downloadResumeBtn').href = 'files/resume.pdf';
@@ -247,8 +251,12 @@ $(document).ready(function() {
             document.getElementById('education').textContent = language.en.education;
             document.getElementById('contactInfo').textContent = language.en.contact;
             document.getElementById('aboutHeader').textContent = language.en.about;
+            document.getElementById('aboutHeader').textContent = language.en.about;
             document.getElementById('jobCard').innerHTML = language.en.job;
             document.getElementById('jobCard2').innerHTML = language.en.job2; 
+            document.getElementById('jobHeader').textContent = `
+            Fitbank - Fullstack Analyst and System Developer .Net | C# Junior II - On-Site | 09/2024 - 03/2025`;
+            document.getElementById('jobHeader2').textContent = "Grupo Ramos de Negócios e Tecnologia - FullStack .Net | C# Developer - Hybrid | 07/2022 – 09/2024";
         }
     });
 });
